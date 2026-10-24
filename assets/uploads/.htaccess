@@ -1,0 +1,12 @@
+# Prevent execution of any scripts in the uploads directory
+<FilesMatch "(?i)\.(php|phtml|php3|php4|php5|php7|phps|pht|phar|inc|pl|py|cgi|sh|bash|exe|bat|cmd|vbs|js|html|htm)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+Options -ExecCGI -Indexes

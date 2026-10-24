@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" width="100%" height="100%">
+  <defs>
+    <!-- Panoramic Ambient Gradients -->
+    <linearGradient id="panoBgZaffran" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfcf8"/>
+      <stop offset="35%" stop-color="#fdf5ec"/>
+      <stop offset="70%" stop-color="#f8ebd8"/>
+      <stop offset="100%" stop-color="#ecd3b6"/>
+    </linearGradient>
+
+    <radialGradient id="zaffranAura" cx="72%" cy="52%" r="48%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#faeee0" stop-opacity="0.8"/>
+      <stop offset="75%" stop-color="#f2dcbe" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#ecd3b6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Crystal Clear Glass Bowl Gradient -->
+    <linearGradient id="crystalBowl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#faf2ea" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="85%" stop-color="#e2cfbf" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ba9c84" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Deep Ruby Saffron Filament Gradients -->
+    <linearGradient id="saffronThreadDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a0c0c"/>
+      <stop offset="50%" stop-color="#b81616"/>
+      <stop offset="100%" stop-color="#e8451c"/>
+    </linearGradient>
+
+    <linearGradient id="saffronThreadGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c11818"/>
+      <stop offset="80%" stop-color="#e53b12"/>
+      <stop offset="100%" stop-color="#f99b1d"/>
+    </linearGradient>
+
+    <!-- Wooden / Brass Box Tray Gradient -->
+    <linearGradient id="vintageTray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d4233"/>
+      <stop offset="50%" stop-color="#1b2a20"/>
+      <stop offset="100%" stop-color="#0f1812"/>
+    </linearGradient>
+
+    <linearGradient id="trayRim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f4d48a"/>
+      <stop offset="50%" stop-color="#dbab4a"/>
+      <stop offset="100%" stop-color="#8a6119"/>
+    </linearGradient>
+
+    <filter id="softZaffranShadowPano" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#3c1e13" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- Full-Bleed Panoramic Background -->
+  <rect width="1920" height="900" fill="url(#panoBgZaffran)"/>
+
+  <!-- Warm Saffron Aura in Product Section -->
+  <rect width="1920" height="900" fill="url(#zaffranAura)"/>
+
+  <!-- Botanical Saffron Flower Petal Geometry in Background (Center-Right cx=1400) -->
+  <g opacity="0.45" transform="translate(1400, 480)">
+    <circle cx="0" cy="0" r="360" fill="none" stroke="#2d4e3e" stroke-width="1.8" stroke-dasharray="8 10"/>
+    <ellipse cx="0" cy="-210" rx="38" ry="105" fill="#a89bb6" opacity="0.32"/>
+    <ellipse cx="180" cy="-105" rx="38" ry="105" fill="#a89bb6" opacity="0.32" transform="rotate(60 180 -105)"/>
+    <ellipse cx="180" cy="105" rx="38" ry="105" fill="#a89bb6" opacity="0.32" transform="rotate(120 180 105)"/>
+    <ellipse cx="0" cy="210" rx="38" ry="105" fill="#a89bb6" opacity="0.32"/>
+    <ellipse cx="-180" cy="105" rx="38" ry="105" fill="#a89bb6" opacity="0.32" transform="rotate(240 -180 105)"/>
+    <ellipse cx="-180" cy="-105" rx="38" ry="105" fill="#a89bb6" opacity="0.32" transform="rotate(300 -180 -105)"/>
+  </g>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="1400" cy="745" rx="360" ry="40" fill="#3d281a" opacity="0.18"/>
+  <ellipse cx="1400" cy="738" rx="250" ry="24" fill="#20130b" opacity="0.26"/>
+
+  <!-- Lacquered Octagonal Presentation Box / Plinth (Center cx=1400) -->
+  <g filter="url(#softZaffranShadowPano)">
+    <!-- Base Plate -->
+    <path d="M 1145 615 L 1235 705 L 1565 705 L 1655 615 L 1610 525 L 1190 525 Z" fill="url(#vintageTray)" stroke="url(#trayRim)" stroke-width="3.5"/>
+    
+    <!-- Top Display Surface -->
+    <ellipse cx="1400" cy="590" rx="290" ry="85" fill="#17241c" stroke="url(#trayRim)" stroke-width="2"/>
+
+    <!-- Gold Crest Inlay in Wooden Plinth -->
+    <ellipse cx="1400" cy="590" rx="260" ry="74" fill="none" stroke="#dbab4a" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.6"/>
+
+    <!-- Heritage Saffron Filaments Mound (Imperial Super Negin) -->
+    <ellipse cx="1400" cy="565" rx="185" ry="58" fill="#750a0a"/>
+    <ellipse cx="1400" cy="550" rx="150" ry="46" fill="#9c1010"/>
+
+    <!-- Hand-drawn Crimson Filaments (Super Negin Saffron Stigmas) -->
+    <g stroke-linecap="round">
+      <!-- Cluster 1: Left Flank -->
+      <path d="M 1295 545 Q 1265 485 1235 455 Q 1228 448 1220 452" stroke="url(#saffronThreadGold)" stroke-width="6.5" fill="none"/>
+      <path d="M 1318 538 Q 1288 478 1265 425 Q 1258 410 1242 414" stroke="url(#saffronThreadDark)" stroke-width="6" fill="none"/>
+      <path d="M 1340 552 Q 1310 455 1288 402 Q 1280 380 1265 384" stroke="url(#saffronThreadGold)" stroke-width="6.2" fill="none"/>
+
+      <!-- Cluster 2: Center Crown -->
+      <path d="M 1370 530 Q 1355 425 1348 350 Q 1345 320 1332 312" stroke="url(#saffronThreadGold)" stroke-width="7" fill="none"/>
+      <path d="M 1392 522 Q 1392 410 1388 320 Q 1385 290 1370 282" stroke="url(#saffronThreadDark)" stroke-width="7.2" fill="none"/>
+      <path d="M 1408 528 Q 1415 418 1422 335 Q 1428 305 1442 298" stroke="url(#saffronThreadGold)" stroke-width="7" fill="none"/>
+      <path d="M 1430 538 Q 1445 432 1460 358 Q 1468 328 1482 320" stroke="url(#saffronThreadDark)" stroke-width="6.5" fill="none"/>
+
+      <!-- Cluster 3: Right Flank -->
+      <path d="M 1460 545 Q 1498 462 1535 410 Q 1550 395 1568 398" stroke="url(#saffronThreadGold)" stroke-width="6.2" fill="none"/>
+      <path d="M 1490 558 Q 1528 485 1572 440 Q 1588 425 1602 432" stroke="url(#saffronThreadDark)" stroke-width="6" fill="none"/>
+      <path d="M 1445 568 Q 1475 500 1512 455" stroke="url(#saffronThreadGold)" stroke-width="5" fill="none"/>
+
+      <!-- Front Cascade Strands -->
+      <path d="M 1355 568 Q 1325 590 1295 620 Q 1280 635 1272 650" stroke="url(#saffronThreadDark)" stroke-width="6" fill="none"/>
+      <path d="M 1385 582 Q 1385 620 1378 658 Q 1372 672 1362 682" stroke="url(#saffronThreadGold)" stroke-width="6.2" fill="none"/>
+      <path d="M 1438 575 Q 1468 612 1490 642 Q 1505 662 1520 672" stroke="url(#saffronThreadDark)" stroke-width="6" fill="none"/>
+      
+      <!-- Stigma Tips -->
+      <circle cx="1220" cy="452" r="4.5" fill="#e53b12"/>
+      <circle cx="1332" cy="312" r="5" fill="#f99b1d"/>
+      <circle cx="1370" cy="282" r="5.5" fill="#f99b1d"/>
+      <circle cx="1442" cy="298" r="5" fill="#e53b12"/>
+      <circle cx="1568" cy="398" r="4.8" fill="#f99b1d"/>
+      <circle cx="1602" cy="432" r="4.2" fill="#e53b12"/>
+    </g>
+
+    <!-- Glass Dome Cloche Cover (Resting gently tilted behind) -->
+    <path d="M 1220 545 C 1220 230, 1580 230, 1580 545" fill="url(#crystalBowl)" opacity="0.35" stroke="#ffffff" stroke-width="3"/>
+    <ellipse cx="1400" cy="545" rx="180" ry="36" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.5"/>
+    <circle cx="1400" cy="245" r="24" fill="url(#crystalBowl)" stroke="#ffffff" stroke-width="2" opacity="0.65"/>
+
+    <!-- Subtle Premium Badge on Tray -->
+    <rect x="1295" y="640" width="210" height="42" rx="9" fill="#0f1912" stroke="url(#trayRim)" stroke-width="1.5"/>
+    <text x="1400" y="667" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" letter-spacing="3" font-weight="600" fill="#f4d48a" text-anchor="middle">SUPER NEGIN GRADE</text>
+  </g>
+
+  <!-- Spec Highlight Card Embedded in Composition -->
+  <g transform="translate(1080, 680)">
+    <rect width="250" height="74" rx="18" fill="#ffffff" fill-opacity="0.92" stroke="#e3ded2" stroke-width="1.2"/>
+    <circle cx="38" cy="37" r="22" fill="#faf7ef"/>
+    <polygon points="38 27 41 33 48 34 43 39 44 46 38 43 32 46 33 39 28 34 35 33" fill="none" stroke="#234331" stroke-width="1.8" stroke-linejoin="round"/>
+    <text x="72" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" letter-spacing="1" fill="#7b9e87" text-transform="uppercase">FILAMENT QUALITY</text>
+    <text x="72" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" font-weight="700" fill="#0f1d15">Grade-1 Super Negin</text>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="100%" height="100%">
+  <defs>
+    <radialGradient id="prodCardBg3" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#fbfaf7"/>
+      <stop offset="100%" stop-color="#f0ece1"/>
+    </radialGradient>
+    <radialGradient id="zaffranAuraCard" cx="50%" cy="52%" r="48%">
+      <stop offset="0%" stop-color="#e05324" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#dca13d" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crystalBox" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#333333"/>
+      <stop offset="15%" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="45%" stop-color="#141414"/>
+      <stop offset="85%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#222222"/>
+    </linearGradient>
+    <linearGradient id="goldSaffron" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9a7122"/>
+      <stop offset="30%" stop-color="#dca13d"/>
+      <stop offset="50%" stop-color="#fdf3cf"/>
+      <stop offset="75%" stop-color="#dca13d"/>
+      <stop offset="100%" stop-color="#7c5815"/>
+    </linearGradient>
+    <filter id="cardShadow3" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#141414" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="900" fill="url(#prodCardBg3)"/>
+  <rect width="900" height="900" fill="url(#zaffranAuraCard)"/>
+
+  <ellipse cx="450" cy="740" rx="270" ry="32" fill="#241b14" opacity="0.14" filter="url(#cardShadow3)"/>
+  <ellipse cx="450" cy="735" rx="190" ry="18" fill="#140f0c" opacity="0.22"/>
+
+  <!-- Saffron Box -->
+  <g filter="url(#cardShadow3)">
+    <!-- Acrylic / Crystal Box -->
+    <rect x="275" y="380" width="350" height="300" rx="32" fill="url(#crystalBox)" stroke="#e0e0e0" stroke-width="2"/>
+    
+    <!-- Gold Rim Base -->
+    <rect x="265" y="650" width="370" height="34" rx="8" fill="url(#goldSaffron)"/>
+
+    <!-- Saffron Threads Pile Inside -->
+    <ellipse cx="450" cy="510" rx="140" ry="85" fill="#9e1c0e" opacity="0.95"/>
+    <ellipse cx="450" cy="500" rx="120" ry="70" fill="#c92a10" opacity="0.95"/>
+    
+    <path d="M 350 490 Q 410 430 450 470 Q 480 500 530 450" stroke="#f03c14" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M 380 520 Q 420 450 470 480 Q 510 500 550 470" stroke="#dca13d" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M 340 470 Q 380 500 430 460 Q 490 430 530 500" stroke="#f55522" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M 390 530 Q 440 490 480 520 Q 520 540 550 490" stroke="#b31505" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+    <!-- Front Label -->
+    <rect x="330" y="565" width="240" height="75" rx="6" fill="#0d0d0d" stroke="#dca13d" stroke-width="1"/>
+    <text x="450" y="592" font-family="'Cinzel', serif" font-size="12" font-weight="700" fill="#dca13d" letter-spacing="3" text-anchor="middle">ZAFFRAN</text>
+    <text x="450" y="618" font-family="'Playfair Display', serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Super Negin Saffron</text>
+
+    <!-- Acrylic Lid -->
+    <rect x="265" y="340" width="370" height="45" rx="8" fill="#ffffff" opacity="0.3" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="420" y="315" width="60" height="28" rx="6" fill="url(#goldSaffron)"/>
+  </g>
+</svg>

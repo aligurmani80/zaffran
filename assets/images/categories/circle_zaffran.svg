@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="catDarkBg3" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1c1616"/>
+      <stop offset="60%" stop-color="#0d0a0a"/>
+      <stop offset="100%" stop-color="#050303"/>
+    </radialGradient>
+    <radialGradient id="saffronGlow" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#e05324" stop-opacity="0.3"/>
+      <stop offset="40%" stop-color="#dca13d" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldRim3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dca13d" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#9a7122" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="crystalBowl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#333333"/>
+      <stop offset="15%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#151515"/>
+      <stop offset="85%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#222222"/>
+    </linearGradient>
+    <filter id="shadowCircle3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <circle cx="250" cy="250" r="240" fill="url(#catDarkBg3)"/>
+  <circle cx="250" cy="250" r="239" fill="none" stroke="url(#goldRim3)" stroke-width="1.5"/>
+  <circle cx="250" cy="250" r="240" fill="url(#saffronGlow)"/>
+
+  <!-- Saffron Crystal Dish & Ruby-Red Saffron Threads -->
+  <g filter="url(#shadowCircle3)">
+    <ellipse cx="250" cy="385" rx="95" ry="15" fill="#000000" opacity="0.9"/>
+
+    <!-- Crystal Clear Glass Box/Dish -->
+    <rect x="170" y="230" width="160" height="135" rx="16" fill="url(#crystalBowl)" stroke="#444444" stroke-width="1"/>
+    
+    <!-- Rich Golden Box Base -->
+    <rect x="165" y="350" width="170" height="18" rx="4" fill="#dca13d"/>
+
+    <!-- Saffron Threads Pile Inside (Crimson & Ruby Red Stigmas) -->
+    <ellipse cx="250" cy="290" rx="65" ry="40" fill="#9e1c0e" opacity="0.95"/>
+    <ellipse cx="250" cy="285" rx="55" ry="32" fill="#c92a10" opacity="0.95"/>
+    
+    <!-- Saffron Filaments -->
+    <path d="M 210 280 Q 235 250 250 270 Q 265 290 280 260" stroke="#f03c14" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 225 295 Q 240 260 260 275 Q 275 285 295 270" stroke="#dca13d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 205 270 Q 220 285 245 265 Q 270 250 290 285" stroke="#f55522" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 230 300 Q 250 280 270 295 Q 285 305 295 280" stroke="#b31505" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Minimal Front Label -->
+    <rect x="195" y="315" width="110" height="40" rx="3" fill="#0d0d0d" stroke="#dca13d" stroke-width="0.75"/>
+    <text x="250" y="330" font-family="'Cinzel', serif" font-size="7" font-weight="700" fill="#dca13d" letter-spacing="1.5" text-anchor="middle">ZAFFRAN</text>
+    <text x="250" y="345" font-family="'Playfair Display', serif" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">Super Negin</text>
+
+    <!-- Glass Lid Crystal Handle -->
+    <rect x="165" y="210" width="170" height="22" rx="4" fill="#ffffff" opacity="0.35" stroke="#555555" stroke-width="0.75"/>
+    <rect x="235" y="195" width="30" height="16" rx="4" fill="#dca13d"/>
+  </g>
+</svg>

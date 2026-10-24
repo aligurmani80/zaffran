@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="catDarkBg4" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#181818"/>
+      <stop offset="60%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+    <radialGradient id="goldGlow4" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#dca13d" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#dca13d" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldRim4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dca13d" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#9a7122" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="oilFlacon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a2215"/>
+      <stop offset="20%" stop-color="#664d26"/>
+      <stop offset="45%" stop-color="#dca13d"/>
+      <stop offset="70%" stop-color="#996a1e"/>
+      <stop offset="100%" stop-color="#1f180d"/>
+    </linearGradient>
+    <filter id="shadowCircle4" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <circle cx="250" cy="250" r="240" fill="url(#catDarkBg4)"/>
+  <circle cx="250" cy="250" r="239" fill="none" stroke="url(#goldRim4)" stroke-width="1.5"/>
+  <circle cx="250" cy="250" r="240" fill="url(#goldGlow4)"/>
+
+  <!-- Artisanal Perfume Oil Dropper Flacon & Pipette -->
+  <g filter="url(#shadowCircle4)">
+    <ellipse cx="250" cy="385" rx="85" ry="14" fill="#000000" opacity="0.9"/>
+    <ellipse cx="250" cy="382" rx="45" ry="7" fill="#dca13d" opacity="0.3"/>
+
+    <!-- Cylindrical Amber Apothecary Bottle -->
+    <rect x="190" y="225" width="120" height="150" rx="14" fill="url(#oilFlacon)" stroke="#554228" stroke-width="1"/>
+    
+    <!-- Glass Sheen Lines -->
+    <rect x="200" y="235" width="12" height="130" rx="3" fill="#ffffff" opacity="0.22"/>
+    <rect x="290" y="235" width="6" height="130" rx="2" fill="#ffffff" opacity="0.12"/>
+
+    <!-- Minimal White/Gold Kraft Label -->
+    <rect x="205" y="260" width="90" height="85" rx="2" fill="#0d0d0d" stroke="#dca13d" stroke-width="0.75"/>
+    <text x="250" y="280" font-family="'Cinzel', serif" font-size="7.5" font-weight="700" fill="#dca13d" letter-spacing="1.5" text-anchor="middle">ZAFFRAN</text>
+    <line x1="220" y1="288" x2="280" y2="288" stroke="#dca13d" stroke-width="0.5" opacity="0.6"/>
+    <text x="250" y="306" font-family="'Playfair Display', serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Perfume Oils</text>
+    <text x="250" y="322" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="700" fill="#dca13d" letter-spacing="1" text-anchor="middle">100% PURE CONCENTRATE</text>
+    <text x="250" y="334" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-weight="600" fill="#a0a0a0" text-anchor="middle">B2B &amp; BRAND SUPPLY</text>
+
+    <!-- Dropper Collar & Bulb -->
+    <rect x="228" y="200" width="44" height="26" rx="3" fill="#dca13d" stroke="#fdf3cf" stroke-width="0.5"/>
+    <!-- Black Rubber Bulb -->
+    <path d="M 234 200 C 234 165, 266 165, 266 200 Z" fill="#181818" stroke="#444444" stroke-width="0.75"/>
+  </g>
+</svg>

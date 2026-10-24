@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" width="100%" height="100%">
+  <defs>
+    <!-- Panoramic Ambient Gradients -->
+    <linearGradient id="panoBgPerfume" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7"/>
+      <stop offset="40%" stop-color="#faf5ec"/>
+      <stop offset="70%" stop-color="#f3e9da"/>
+      <stop offset="100%" stop-color="#e8d7c1"/>
+    </linearGradient>
+
+    <radialGradient id="perfumeAura" cx="72%" cy="52%" r="48%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#faeee3" stop-opacity="0.75"/>
+      <stop offset="75%" stop-color="#eedcd0" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e8d7c1" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glass & Liquid Gradients -->
+    <linearGradient id="glassBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdfbf7" stop-opacity="0.95"/>
+      <stop offset="15%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#f5e8d8" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#dfc5aa" stop-opacity="0.5"/>
+      <stop offset="90%" stop-color="#caa788" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8c6c4e" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="fragranceLiquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f4c88a" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#df9a4e" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#a4581f" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d5a49"/>
+      <stop offset="45%" stop-color="#1f3729"/>
+      <stop offset="70%" stop-color="#15271d"/>
+      <stop offset="100%" stop-color="#2d4638"/>
+    </linearGradient>
+
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f3d797"/>
+      <stop offset="40%" stop-color="#fdf4da"/>
+      <stop offset="70%" stop-color="#e0b25e"/>
+      <stop offset="100%" stop-color="#ad7b2c"/>
+    </linearGradient>
+
+    <!-- Shadow filters -->
+    <filter id="softShadowPano" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#2a1f18" flood-opacity="0.22"/>
+    </filter>
+    <filter id="pedestalShadowPano" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="35" stdDeviation="40" flood-color="#3e2c1c" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Full-Bleed Panoramic Background -->
+  <rect width="1920" height="900" fill="url(#panoBgPerfume)"/>
+
+  <!-- Atmospheric Light Aura Behind Bottle Area (Right/Center-Right on Desktop) -->
+  <rect width="1920" height="900" fill="url(#perfumeAura)"/>
+
+  <!-- Elegant Decorative Curved Botanical & Geometry Arcs Across Background -->
+  <g opacity="0.45">
+    <circle cx="1400" cy="480" r="380" fill="none" stroke="#2d4e3e" stroke-width="1.5" stroke-dasharray="10 14" opacity="0.25"/>
+    <circle cx="1400" cy="480" r="430" fill="none" stroke="#d4934d" stroke-width="1.2" opacity="0.3"/>
+    <path d="M 900 850 C 1150 780, 1300 600, 1400 350 C 1480 150, 1650 60, 1850 40" fill="none" stroke="#2d4e3e" stroke-width="1" stroke-dasharray="6 8" opacity="0.2"/>
+  </g>
+
+  <!-- Ground Shadows for Bottle Pedestal -->
+  <ellipse cx="1400" cy="740" rx="340" ry="42" fill="#584232" opacity="0.14" filter="url(#pedestalShadowPano)"/>
+  <ellipse cx="1400" cy="732" rx="230" ry="24" fill="#32241b" opacity="0.24"/>
+
+  <!-- Bottle Structure Group (Positioned at center-right cx=1400) -->
+  <g filter="url(#softShadowPano)">
+    <!-- Main Glass Flacon (Scaled gracefully) -->
+    <rect x="1235" y="270" width="330" height="435" rx="32" fill="url(#glassBody)" stroke="#eedbcc" stroke-width="2"/>
+
+    <!-- Inner Fragrance Juice Chamber -->
+    <rect x="1268" y="330" width="264" height="345" rx="20" fill="url(#fragranceLiquid)"/>
+
+    <!-- Liquid Surface Meniscus & Sparkle -->
+    <path d="M 1268 339 Q 1400 330 1532 339" stroke="#ffffff" stroke-width="3.5" fill="none" opacity="0.65"/>
+
+    <!-- Glass Highlights & Specular Reflections -->
+    <path d="M 1253 290 L 1253 680" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+    <path d="M 1271 298 L 1271 665" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+    <path d="M 1547 290 L 1547 680" stroke="#483321" stroke-width="4.5" stroke-linecap="round" opacity="0.25"/>
+
+    <!-- Label Plaque (Warm Cream & Forest Green) -->
+    <rect x="1295" y="415" width="210" height="200" rx="12" fill="#fffdfa" stroke="url(#goldTrim)" stroke-width="2"/>
+    <rect x="1301" y="421" width="198" height="188" rx="8" fill="none" stroke="#2d4e3e" stroke-width="1" opacity="0.4"/>
+    
+    <!-- Label Typography -->
+    <text x="1400" y="468" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="16" font-weight="600" letter-spacing="5" fill="#6d5843" text-anchor="middle">ZAFFRAN</text>
+    <line x1="1345" y1="484" x2="1455" y2="484" stroke="#d4934d" stroke-width="1.5"/>
+    <text x="1400" y="522" font-family="'Playfair Display', Georgia, serif" font-size="24" font-style="italic" font-weight="700" fill="#1f3729" text-anchor="middle">Artisanal Oud</text>
+    <text x="1400" y="555" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" letter-spacing="3.5" fill="#8d745e" text-anchor="middle">EXTRAIT DE PARFUM</text>
+    <text x="1400" y="585" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="1.5" fill="#a8927e" text-anchor="middle">50 ML e 1.7 FL. OZ.</text>
+
+    <!-- Bottle Neck -->
+    <rect x="1352" y="218" width="96" height="56" rx="6" fill="url(#glassBody)"/>
+    <!-- Gold Neck Collar Rings -->
+    <rect x="1343" y="204" width="114" height="18" rx="4" fill="url(#goldTrim)"/>
+    <rect x="1340" y="183" width="120" height="22" rx="4" fill="url(#goldTrim)"/>
+
+    <!-- Sculpted Cap (Deep Forest Green with Gold Crest) -->
+    <path d="M 1325 183 C 1325 142, 1348 90, 1400 90 C 1452 90, 1475 142, 1475 183 Z" fill="url(#emeraldCap)" stroke="url(#goldTrim)" stroke-width="2"/>
+    <!-- Cap Highlight -->
+    <path d="M 1352 158 Q 1400 112 1448 158" stroke="#689379" stroke-width="3" fill="none" opacity="0.65"/>
+  </g>
+
+  <!-- Floating Botanical Accents (Saffron Filaments & Golden Sparkles) -->
+  <g opacity="0.9">
+    <path d="M 1585 240 Q 1640 270 1625 320 Q 1610 365 1645 400" fill="none" stroke="#d44a28" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 1615 255 Q 1660 300 1640 345" fill="none" stroke="#e66832" stroke-width="2.8" stroke-linecap="round"/>
+    <circle cx="1647" cy="404" r="5" fill="#e66832"/>
+    
+    <path d="M 1190 620 Q 1160 660 1175 700" fill="none" stroke="#d44a28" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="1176" cy="704" r="4" fill="#e66832"/>
+  </g>
+
+  <!-- Subtle Spec Highlight Card Embedded in Composition -->
+  <g transform="translate(1120, 680)">
+    <rect width="250" height="74" rx="18" fill="#ffffff" fill-opacity="0.92" stroke="#e3ded2" stroke-width="1.2"/>
+    <circle cx="38" cy="37" r="22" fill="#faf7ef"/>
+    <path d="M 38 27 A 10 10 0 1 0 38 47 A 10 10 0 1 0 38 27 M 38 31 L 38 37 L 42 39" fill="none" stroke="#234331" stroke-width="2" stroke-linecap="round"/>
+    <text x="72" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" letter-spacing="1" fill="#7b9e87" text-transform="uppercase">PROJECTION &amp; LONGEVITY</text>
+    <text x="72" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" font-weight="700" fill="#0f1d15">Extrait Concentration</text>
+  </g>
+</svg>

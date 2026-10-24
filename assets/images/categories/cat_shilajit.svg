@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Glow -->
+    <radialGradient id="shilajitGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#fcf9f2" stop-opacity="1"/>
+      <stop offset="65%" stop-color="#f2ebe0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#dfd3c1" stop-opacity="0.4"/>
+    </radialGradient>
+
+    <!-- Obsidian Amber Glass Jar Gradient -->
+    <linearGradient id="amberJar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2d1c13"/>
+      <stop offset="20%" stop-color="#462c1e"/>
+      <stop offset="50%" stop-color="#1f140e"/>
+      <stop offset="80%" stop-color="#3b2418"/>
+      <stop offset="100%" stop-color="#180e08"/>
+    </linearGradient>
+
+    <!-- Gold Foil Cap Gradient -->
+    <linearGradient id="goldCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0c2"/>
+      <stop offset="30%" stop-color="#e0b25e"/>
+      <stop offset="60%" stop-color="#caa04b"/>
+      <stop offset="85%" stop-color="#8d651c"/>
+      <stop offset="100%" stop-color="#caa04b"/>
+    </linearGradient>
+
+    <!-- Rich Organic Pure Shilajit Resin Dripping Gradient -->
+    <linearGradient id="resinDrop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#140b06"/>
+      <stop offset="50%" stop-color="#2e180d"/>
+      <stop offset="100%" stop-color="#090503"/>
+    </linearGradient>
+
+    <!-- Brushed Brass Spoon Gradient -->
+    <linearGradient id="brassSpoon" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#f6e7b9"/>
+      <stop offset="45%" stop-color="#d4aa54"/>
+      <stop offset="80%" stop-color="#9d7429"/>
+      <stop offset="100%" stop-color="#654a16"/>
+    </linearGradient>
+
+    <!-- Shadow filters -->
+    <filter id="jarShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#21150e" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop -->
+  <rect width="800" height="650" rx="24" fill="url(#shilajitGlow)"/>
+
+  <!-- Mountain Contour Heritage Graphic -->
+  <path d="M 120 440 L 220 310 L 320 400 L 460 220 L 580 370 L 680 270 L 750 440" fill="none" stroke="#2d4e3e" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.3"/>
+  <circle cx="400" cy="350" r="235" fill="none" stroke="#d4934d" stroke-width="1" stroke-dasharray="6 8" opacity="0.25"/>
+
+  <!-- Pedestal Shadow -->
+  <ellipse cx="380" cy="545" rx="200" ry="24" fill="#382518" opacity="0.18"/>
+  <ellipse cx="380" cy="540" rx="140" ry="15" fill="#1b1009" opacity="0.24"/>
+
+  <!-- Golden Dosing Spoon Behind/Beside Jar -->
+  <g transform="rotate(-28 470 380)" filter="url(#jarShadow)">
+    <!-- Spoon Handle -->
+    <path d="M 450 180 Q 455 300 460 410 Q 462 430 455 450" stroke="url(#brassSpoon)" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <circle cx="450" cy="180" r="10" fill="url(#brassSpoon)"/>
+    <!-- Spoon Bowl with pure resin ball -->
+    <ellipse cx="456" cy="455" rx="18" ry="26" fill="url(#brassSpoon)"/>
+    <ellipse cx="456" cy="457" rx="14" ry="20" fill="url(#resinDrop)"/>
+    <!-- Molten resin thread dripping -->
+    <path d="M 456 475 Q 460 520 458 550" stroke="#120a05" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <circle cx="458" cy="552" r="3" fill="#120a05"/>
+  </g>
+
+  <!-- Main Luxury Glass Shilajit Jar Group -->
+  <g filter="url(#jarShadow)">
+    <!-- Heavy Base Glass Jar Body -->
+    <rect x="250" y="270" width="260" height="235" rx="20" fill="url(#amberJar)" stroke="#4d3020" stroke-width="2"/>
+    
+    <!-- Heavy Glass Base Rim -->
+    <rect x="250" y="475" width="260" height="30" rx="10" fill="#180e08" opacity="0.7"/>
+
+    <!-- Glass High Specular Rim Reflectors -->
+    <path d="M 264 285 L 264 485" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" opacity="0.35"/>
+    <path d="M 276 295 L 276 475" stroke="#ffffff" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+    <path d="M 496 285 L 496 485" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.15"/>
+
+    <!-- Label Face: Forest Green Accent with Gold Crest -->
+    <rect x="285" y="320" width="190" height="135" rx="8" fill="#1b2e23" stroke="url(#goldCap)" stroke-width="1.5"/>
+    <rect x="290" y="325" width="180" height="125" rx="6" fill="none" stroke="#e0b25e" stroke-width="0.8" opacity="0.5"/>
+
+    <!-- Label Content -->
+    <text x="380" y="352" font-family="'Cinzel', Georgia, serif" font-size="10" letter-spacing="4" fill="#d4aa54" text-anchor="middle">ZAFFRAN BOTANICALS</text>
+    <line x1="330" y1="362" x2="430" y2="362" stroke="#d4aa54" stroke-width="1" opacity="0.7"/>
+    <text x="380" y="390" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Pure Shilajit</text>
+    <text x="380" y="412" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2.5" fill="#a4c9b3" text-anchor="middle">GOLD GRADE RESIN</text>
+    <text x="380" y="432" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" letter-spacing="1" fill="#e8d8be" text-anchor="middle">100% Himalayan Harvest • 30g</text>
+
+    <!-- Gold Crest Metal Lid -->
+    <rect x="235" y="222" width="290" height="52" rx="10" fill="url(#goldCap)" stroke="#8d651c" stroke-width="1"/>
+    <!-- Lid knurled grip lines -->
+    <line x1="245" y1="234" x2="515" y2="234" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+    <line x1="245" y1="262" x2="515" y2="262" stroke="#684712" stroke-width="1.5" opacity="0.5"/>
+  </g>
+</svg>

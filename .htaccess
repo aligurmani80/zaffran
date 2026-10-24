@@ -1,0 +1,22 @@
+# Prevent directory browsing
+Options -Indexes
+
+# Block sensitive and private files
+<FilesMatch "^(\.env|\.git|\.gitignore|composer\.(json|lock)|package\.(json|lock)|.*\.sql|.*\.log|.*\.md|test_.*\.php|qa_capture\.js)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Block access to backups and logs directories
+RedirectMatch 403 ^/zaffran/(backups|logs)/
+
+# Prevent PHP script execution in uploaded media assets
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^assets/uploads/.*\.php$ - [F,L]
+</IfModule>

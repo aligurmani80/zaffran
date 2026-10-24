@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="businessBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fdfbf7"/>
+      <stop offset="70%" stop-color="#f4ede1"/>
+      <stop offset="100%" stop-color="#e8dcce"/>
+    </radialGradient>
+    <linearGradient id="amberOil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7d498"/>
+      <stop offset="50%" stop-color="#e09d43"/>
+      <stop offset="100%" stop-color="#9d5b16"/>
+    </linearGradient>
+    <linearGradient id="roseOil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f3b4b4"/>
+      <stop offset="50%" stop-color="#c94e64"/>
+      <stop offset="100%" stop-color="#7a1c30"/>
+    </linearGradient>
+    <linearGradient id="oudOil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3d2b1f"/>
+      <stop offset="50%" stop-color="#22150d"/>
+      <stop offset="100%" stop-color="#0e0703"/>
+    </linearGradient>
+    <linearGradient id="goldTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f7e1a0"/>
+      <stop offset="50%" stop-color="#d6a74b"/>
+      <stop offset="100%" stop-color="#8a6119"/>
+    </linearGradient>
+    <filter id="bottleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3c2a1a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="450" rx="18" fill="url(#businessBg)"/>
+
+  <!-- Geometric accent lines -->
+  <circle cx="300" cy="240" r="180" fill="none" stroke="#2d4e3e" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.3"/>
+  <ellipse cx="300" cy="380" rx="220" ry="22" fill="#463020" opacity="0.12"/>
+
+  <!-- Bottle 1 (Left - Rose / Floral Concentrate) -->
+  <g transform="translate(140, 160)" filter="url(#bottleShadow)">
+    <rect x="0" y="50" width="85" height="150" rx="14" fill="#ffffff" stroke="#e0cdbe" stroke-width="1.5" opacity="0.9"/>
+    <rect x="7" y="70" width="71" height="120" rx="10" fill="url(#roseOil)"/>
+    <rect x="24" y="24" width="37" height="28" rx="4" fill="#fdfbf7"/>
+    <rect x="20" y="16" width="45" height="12" rx="3" fill="url(#goldTop)"/>
+    <!-- Glass dropper pipette bulb -->
+    <path d="M 28 16 C 28 2, 57 2, 57 16 Z" fill="#1f3729"/>
+    <rect x="18" y="110" width="49" height="50" rx="4" fill="#fffaf5" stroke="#d4b494" stroke-width="0.8"/>
+    <text x="42" y="130" font-family="'Cinzel', Georgia, serif" font-size="7" font-weight="600" fill="#2d4e3e" text-anchor="middle">ROSE</text>
+    <text x="42" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" fill="#8d745e" text-anchor="middle">100g PURE</text>
+  </g>
+
+  <!-- Bottle 2 (Center - Royal Oud Oil Concentrate) -->
+  <g transform="translate(250, 120)" filter="url(#bottleShadow)">
+    <rect x="0" y="65" width="100" height="185" rx="16" fill="#ffffff" stroke="#dec7b4" stroke-width="1.5" opacity="0.95"/>
+    <rect x="8" y="90" width="84" height="150" rx="12" fill="url(#oudOil)"/>
+    <!-- Liquid glow -->
+    <path d="M 16 100 L 16 230" stroke="#ffffff" stroke-width="2.5" opacity="0.4" stroke-linecap="round"/>
+    <rect x="30" y="32" width="40" height="35" rx="4" fill="#fdfbf7"/>
+    <rect x="25" y="20" width="50" height="15" rx="4" fill="url(#goldTop)"/>
+    <!-- Pipette top -->
+    <path d="M 32 20 C 32 4, 68 4, 68 20 Z" fill="#2d4e3e"/>
+    <!-- Label -->
+    <rect x="20" y="140" width="60" height="60" rx="4" fill="#1b2e23" stroke="url(#goldTop)" stroke-width="1"/>
+    <text x="50" y="162" font-family="'Cinzel', Georgia, serif" font-size="8" font-weight="600" fill="#f4d48a" text-anchor="middle">OUD NOIR</text>
+    <text x="50" y="178" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" fill="#ffffff" text-anchor="middle">CONCENTRATE</text>
+    <text x="50" y="190" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" fill="#a4c9b3" text-anchor="middle">B2B GRADE</text>
+  </g>
+
+  <!-- Bottle 3 (Right - Amber / Saffron Fragrance Oil) -->
+  <g transform="translate(375, 170)" filter="url(#bottleShadow)">
+    <rect x="0" y="45" width="85" height="140" rx="14" fill="#ffffff" stroke="#e0cdbe" stroke-width="1.5" opacity="0.9"/>
+    <rect x="7" y="65" width="71" height="110" rx="10" fill="url(#amberOil)"/>
+    <rect x="24" y="22" width="37" height="25" rx="4" fill="#fdfbf7"/>
+    <rect x="20" y="14" width="45" height="12" rx="3" fill="url(#goldTop)"/>
+    <path d="M 28 14 C 28 0, 57 0, 57 14 Z" fill="#1f3729"/>
+    <rect x="18" y="105" width="49" height="48" rx="4" fill="#fffaf5" stroke="#d4b494" stroke-width="0.8"/>
+    <text x="42" y="125" font-family="'Cinzel', Georgia, serif" font-size="7" font-weight="600" fill="#2d4e3e" text-anchor="middle">AMBER</text>
+    <text x="42" y="139" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" fill="#8d745e" text-anchor="middle">500g BATCH</text>
+  </g>
+
+  <!-- Measuring Pipette & Graduated Beaker hint -->
+  <g transform="translate(100, 260)" opacity="0.7">
+    <path d="M 0 60 L 25 10 L 40 10 L 65 60 Z" fill="none" stroke="#2d4e3e" stroke-width="1.5"/>
+    <line x1="15" y1="45" x2="25" y2="45" stroke="#2d4e3e" stroke-width="1"/>
+    <line x1="20" y1="35" x2="30" y2="35" stroke="#2d4e3e" stroke-width="1"/>
+    <line x1="25" y1="25" x2="35" y2="25" stroke="#2d4e3e" stroke-width="1"/>
+  </g>
+</svg>
